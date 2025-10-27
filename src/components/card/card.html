@@ -1,0 +1,29 @@
+<div class="card mb-3" style="width: 18rem">
+  <img
+    src="{{jogador.imagem}}"
+    class="card-img-top"
+    alt="{{jogador.nome}}"
+    style="width: auto; height: 300px"
+  />
+  <div class="card-body text-start">
+    <div class="row">
+      <div class="col-8">
+        <h5 class="card-title">{{jogador.nome}}</h5>
+      </div>
+      <div class="col-4">
+        <span class="badge bg-secondary">{{jogador.posicao}}</span>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-7">
+        <p class="card-text mb-0">Idade: {{jogador.idade}}</p>
+        <p class="card-text">Número: {{jogador.numero}}</p>
+      </div>
+      <div class="col-5">
+        <button class="btn btn-success w-100" (click)="escalar.emit()">
+          Escalar
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
